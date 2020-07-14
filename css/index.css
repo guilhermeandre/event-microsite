@@ -23,10 +23,13 @@ main {
   margin-right: auto;
 }
 
-a {
-  color: #84ca5e;
+ div.responsive-links {  
   font-weight: 700;
   font-size: 1.25em;
+}
+
+a {
+  color: #84ca5e;
 }
 
 li {
@@ -106,6 +109,7 @@ h3, h4,h5, h6 {
 }
 
 .responsive-logo {
+  font-size: 1.25em;
   font-family: var(--font-family-titles);  
   position: absolute;
   right: 0; 
@@ -156,6 +160,7 @@ h3, h4, h5, h6, p {
 }
 
 .tickets-button, .login-button {
+  font-size: 1em;
   width: 7em;
   height: 2.5em;
   border-radius: 3em;
@@ -164,7 +169,7 @@ h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-.tickets-button {
+.tickets-button {  
   color: var(--col-on-accent-1);
   background-color: var(--color-2);
   border-style: none;

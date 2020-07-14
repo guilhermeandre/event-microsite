@@ -1,0 +1,59 @@
+:root {
+  --font-family-titles: 'Caveat', 'Arial', cursive;
+  --font-family-body: 'Oswald', 'Arial', sans-serif;;
+  --color-1: #3f1c52;
+  --col-on-accent-1: #84ca5e;
+  --color-2: #7e38a4; 
+  --col-on-accent-2: #639b44;
+}
+
+h2 {
+  display: inline-block;
+  margin-top: 0;
+  margin-left: 0.5em; 
+}
+
+h3 {
+  float: right;
+  margin-right: 0.5em;
+}
+
+h4 {
+  font-family: var(--font-family-titles);
+}
+
+.artist-header {
+  display: block;
+  background-color: var(--color-2);
+  padding-top: 0.5em;  
+  padding-bottom: 0.5em;  
+}
+
+.artist-bio-box {
+  margin-top: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-box-header {
+  font-size: 1.25em;
+}
+
+@media only screen and (min-width: 600px) {
+  h2 {
+    margin-left: 1em;
+  }
+
+  .artist-header {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media only screen and (min-width: 769px) {
+  h2 {
+    margin-left: 2.6rem;
+  }
+
+}
