@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Oswald:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Ranchers&display=swap');
 :root {
-  --font-family-titles: 'Caveat', 'Arial', cursive;
-  --font-family-body: 'Oswald', 'Arial', sans-serif;;
-  --color-1: #3f1c52;
-  --col-on-accent-1: #84ca5e;
-  --color-2: #7e38a4; 
-  --col-on-accent-2: #639b44;
+  --font-family-titles: 'Ranchers', 'Arial', cursive;
+  --font-family-body: 'Raleway', 'Arial', sans-serif;
+  --color-1: rgb(237,201,175);
+  --col-gradient: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  --col-on-accent-1: #f5576c;
+  --color-2: #fae6d6;
+  --col-on-accent-2: #0a1e2c;
+  --color-3: #6a11cb;
 }
 
 html {
-  background-color: #180b20;
+  background-color: #f1d4bf;
 }
 
 body {
   color:  var(--col-on-accent-1);
   font-family: var(--font-family-body);
-  font-weight: 300;
+
 }
 
 main {
@@ -29,7 +31,8 @@ main {
 }
 
 a {
-  color: #84ca5e;
+  color:var(--col-on-accent-1);
+  font-weight: 700;
 }
 
 li {
@@ -39,6 +42,9 @@ li {
 h2 {
   margin-top: 1rem;
   margin-left: 2rem;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 h3, h4 {
@@ -50,11 +56,15 @@ h3, h4,h5, h6 {
   font-weight: normal;
 }
 
+ h4, h5, h6, p {
+  color: var(--col-on-accent-1);
+}
+
 .nav-bar {
   display: flex;
   padding-top: 1em;
   padding-bottom: 1em;
-  background-color: var(--color-1)
+  background: var(--col-gradient)
 }
 
 .hyperlinks {
@@ -97,11 +107,19 @@ h3, h4,h5, h6 {
 .headliner,
 .artist {
   display: inline-block;  
+  color: var(--color-3);
+  
+}
+
+.artist {
+  font-weight: 700;
 }
 
 .headliner, h6 {
   margin-left: 0.25rem;
   margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+
 }
 
 .responsive-links {
@@ -114,20 +132,24 @@ h3, h4,h5, h6 {
   position: absolute;
   right: 0; 
   margin-right: 1.5rem;  
-  text-shadow:0px 5px 10px var(--color-2);
+  /* text-shadow:0px 5px 10px var(--color-2); */
 }
 
 .date-box, .bio-box {
   margin-bottom : 1rem;
+  border-radius: 0.25em;
+  /* padding-bottom: 1em; */
 }
 
-.box-header {
-  background-color: var(--color-1);
+.box-header, .bio-box-header {
+  color: var(--color-1);
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  background-color: var(--col-on-accent-1);
+  /* box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.75);   */
 }
 
-.bio-box-header {
-  background-color: var(--color-1);
-}
+
 
 .date-box {
   background-color: var(--color-2);
@@ -138,7 +160,7 @@ h3, h4,h5, h6 {
 }
 
 .description {
-  color: #84ca5e;
+  color:var(--col-on-accent-1);
   text-align: justify;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -148,19 +170,19 @@ h3, h4,h5, h6 {
 
 .dates-title{
   font-family: var(--font-family-titles);
-  margin-left: 1.5em;
+  /* margin-left: 1.5em; */
+  font-size: 2em;
 }
 
 .festival-title {
   font-family: var(--font-family-titles);
 }
 
-h3, h4, h5, h6, p {
-  color: var(--col-on-accent-1);
-}
+
 
 .tickets-button, .login-button {
   font-size: 1em;
+  font-weight: 700;
   width: 7em;
   height: 2.5em;
   border-radius: 3em;
@@ -171,7 +193,8 @@ h3, h4, h5, h6, p {
 
 .tickets-button {  
   color: var(--col-on-accent-1);
-  background-color: var(--color-2);
+  /* background-color: var(--color-2); */
+  background-color: #fef9d7;
   border-style: none;
    
 }
@@ -181,7 +204,7 @@ h3, h4, h5, h6, p {
   background-color: transparent;
   border-style: solid;
   border-width: medium;
-  border-color: var(--color-2);
+  border-color:  #fef9d7;
 }
 
 /* Hamburger menu */
@@ -262,7 +285,7 @@ h3, h4, h5, h6, p {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background-color: #3f1c52;
+  background-color:var(--color-1);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -435,7 +458,7 @@ h3, h4, h5, h6, p {
       position: relative;
       margin-right: 2rem;
       top: -15px;    
-      font-size: 2em;
+      font-size: 2.5em;
       margin-top: 1em;  
     }
 
