@@ -1,5 +1,5 @@
 :root {
-  --font-family-titles: 'Ranchers', 'Arial', cursive;
+  --font-family-titles: 'Luckiest Guy', 'Arial', cursive;
   --font-family-body: 'Raleway', 'Arial', sans-serif;
   --color-1: #FFE400;
   --col-gradient: linear-gradient(to right, #FF1497 0%, #f834a0 100%);
@@ -16,7 +16,7 @@ h2 {
   margin-top: 0;
   margin-left: 1.2em; 
   float: left;
-  letter-spacing: 0.1em;
+  font-weight: 400;
 }
 
 h3 {
@@ -53,7 +53,7 @@ h4 {
 }
 
 .description {
-  color: var(--color-2);
+  color: var(--color-3);
 }
 
 @media only screen and (min-width: 600px) {

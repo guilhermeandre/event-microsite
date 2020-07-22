@@ -1,5 +1,5 @@
 :root {
-  --font-family-titles: "Ranchers", "Arial", cursive;
+  --font-family-titles: 'Luckiest Guy', 'Arial', cursive;
   --font-family-body: "Raleway", "Arial", sans-serif;
   --color-1: #ffe400;
   --col-gradient: linear-gradient(to right, #ff1497 0%, #f758af 100%);
@@ -180,19 +180,21 @@ input[type="password"]:focus {
 }
 
 .label {
+  font-family: var(--font-family-titles);
   position: absolute;
+  font-size: 1.25em;
   left: 1.5em;
   top: 0.8em;
   color: #999;
   font-size: 1em;
   display: inline-block;
   padding: 0.25em 0.65em;
-  font-weight: 700;
+  font-weight: 400;
   transition: (color 0.3s, top 0.3s, background-color 0.8s);
 }
 .floatLabel {
   top: -0.7em;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   font-size: 0.9em;
 }
 
@@ -237,6 +239,13 @@ input[type="password"]:focus {
 @media only screen and (min-width: 769px) {
   .info {
     display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    text-align: center;
   }
 
   .date-button {
@@ -246,15 +255,17 @@ input[type="password"]:focus {
   .dates-wrapper {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 0;
-    margin-left: 0;
+    margin-left: auto;
   }
 
   .prices-wrapper {
-    max-width: 85%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .register-wrapper {
-    max-width: 40%;
+    max-width: 45%;
     margin-left: auto;
   }
 

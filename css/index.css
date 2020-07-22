@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:wght@300;400;700&display=swap');
 :root {
-  --font-family-titles: 'Ranchers', 'Arial', cursive;
+  --font-family-titles: 'Luckiest Guy', 'Arial', cursive;
   --font-family-body: 'Raleway', 'Arial', sans-serif;
   --color-1: #FFE400;
   --col-gradient: linear-gradient(to right, #FF1497 0%, #f758af 100%);
@@ -32,7 +32,7 @@ main {
 
 a {
   color:var(--color-2);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 li {
@@ -333,9 +333,6 @@ h3, h4,h5, h6 {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
 .dot-container {
   position: relative;
   text-align: center;
@@ -352,11 +349,23 @@ h3, h4,h5, h6 {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
   background-color:var(--color-2);
 }
+
+.artist-name {
+  font-family: var(--font-family-titles);
+  color: aliceblue;
+  font-size: 2em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  text-shadow: 2px 2px var(--color-3);
+  /* background-color: rgba(158, 6, 145, 0.233); */
+}
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
