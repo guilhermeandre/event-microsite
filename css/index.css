@@ -2,22 +2,22 @@
 :root {
   --font-family-titles: 'Ranchers', 'Arial', cursive;
   --font-family-body: 'Raleway', 'Arial', sans-serif;
-  --color-1: rgb(237,201,175);
-  --col-gradient: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-  --col-on-accent-1: #f5576c;
-  --color-2: #fae6d6;
+  --color-1: #FFE400;
+  --col-gradient: linear-gradient(to right, #FF1497 0%, #f758af 100%);
+  --col-on-accent-1: #FF1497;
+  --color-2: #FFE400;
   --col-on-accent-2: #0a1e2c;
   --color-3: #6a11cb;
 }
 
-html {
-  background-color: #f1d4bf;
+html { 
+  background: #FFF6E6;
+  
 }
 
 body {
-  color:  var(--col-on-accent-1);
+  color: var(--color-3);
   font-family: var(--font-family-body);
-
 }
 
 main {
@@ -31,7 +31,7 @@ main {
 }
 
 a {
-  color:var(--col-on-accent-1);
+  color:var(--color-2);
   font-weight: 700;
 }
 
@@ -57,7 +57,7 @@ h3, h4,h5, h6 {
 }
 
  h4, h5, h6, p {
-  color: var(--col-on-accent-1);
+  color: var(--color-1);
 }
 
 .nav-bar {
@@ -119,6 +119,7 @@ h3, h4,h5, h6 {
   margin-left: 0.25rem;
   margin-bottom: 0.25rem;
   margin-top: 0.25rem;
+  color: var(--color-3);
 
 }
 
@@ -132,13 +133,13 @@ h3, h4,h5, h6 {
   position: absolute;
   right: 0; 
   margin-right: 1.5rem;  
-  /* text-shadow:0px 5px 10px var(--color-2); */
+  letter-spacing: 0.1em;
 }
 
 .date-box, .bio-box {
   margin-bottom : 1rem;
   border-radius: 0.25em;
-  /* padding-bottom: 1em; */
+  background-color: white;
 }
 
 .box-header, .bio-box-header {
@@ -150,17 +151,8 @@ h3, h4,h5, h6 {
 }
 
 
-
-.date-box {
-  background-color: var(--color-2);
-}
-
-.bio-box {
-  background-color: var(--color-2);
-}
-
 .description {
-  color:var(--col-on-accent-1);
+  color:var(--color-3);
   text-align: justify;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -168,16 +160,10 @@ h3, h4,h5, h6 {
   margin-bottom: 1rem;
 }
 
-.dates-title{
+.dates-title, .festival-title, .prices-title, .register-title{
   font-family: var(--font-family-titles);
-  /* margin-left: 1.5em; */
   font-size: 2em;
 }
-
-.festival-title {
-  font-family: var(--font-family-titles);
-}
-
 
 
 .tickets-button, .login-button {
@@ -192,19 +178,19 @@ h3, h4,h5, h6 {
 }
 
 .tickets-button {  
-  color: var(--col-on-accent-1);
+  color: var(--color-1);
   /* background-color: var(--color-2); */
-  background-color: #fef9d7;
+  background-color:var(--color-3) ;
   border-style: none;
    
 }
 
 .login-button {
-  color: var(--col-on-accent-1);
+  color: var(--color-1);
   background-color: transparent;
   border-style: solid;
   border-width: medium;
-  border-color:  #fef9d7;
+  border-color:  var(--color-3);
 }
 
 /* Hamburger menu */
@@ -226,7 +212,9 @@ h3, h4,h5, h6 {
 }
 
 #menuToggle a:hover {
-  color: var(--col-on-accent-1);
+  color: var(--color-2);
+  background-color: var(--col-on-accent-1);
+  padding: 0.25em;
 }
 
 #menuToggle input {
@@ -248,7 +236,7 @@ h3, h4,h5, h6 {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background-color: var(--col-on-accent-1);
+  background-color: var(--color-1);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -399,7 +387,7 @@ h3, h4,h5, h6 {
     margin-left: 0;
   }
 
-  .dates-title{
+  .dates-title, .prices-title, .register-title{
     margin-left: 0rem;
   }
 
@@ -436,8 +424,9 @@ h3, h4,h5, h6 {
     margin-right: auto;
     max-width: 90%;
   }
+}
 
-  @media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
 
     h2 {
       margin-left: 2rem;
@@ -493,4 +482,3 @@ h3, h4,h5, h6 {
       justify-self: center;
     }
   }
-}
